@@ -1,0 +1,90 @@
+CRITICAL - 2024-04-06 03:30:10 --> CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "https://sistema-cronos.innite.net	/" is not a valid URL.
+in VENDORPATH/codeigniter4/framework/system/HTTP/SiteURI.php on line 199.
+ 1 VENDORPATH/codeigniter4/framework/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+ 2 VENDORPATH/codeigniter4/framework/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+ 3 VENDORPATH/codeigniter4/framework/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+ 4 VENDORPATH/codeigniter4/framework/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+ 5 SYSTEMPATH/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+ 6 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+ 7 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+10 SYSTEMPATH/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+12 SYSTEMPATH/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+13 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+14 SYSTEMPATH/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+15 SYSTEMPATH/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance()
+16 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+17 SYSTEMPATH/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic()
+18 SYSTEMPATH/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest()
+19 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic()
+20 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+21 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 03:30:10 --> ErrorException: Uncaught CodeIgniter\Exceptions\ConfigException: Config\App::$baseURL "https://sistema-cronos.innite.net	/" is not a valid URL. in /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURI.php:199
+Stack trace:
+#0 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+#1 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+#2 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+#3 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+#4 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#6 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#7 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#11 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#13 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#14 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(520): CodeIgniter\Config\BaseService::getSharedInstance()
+#15 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#16 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/Debug/Exceptions.php(150): CodeIgniter\Config\BaseService::__callStatic()
+#17 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler()
+#18 {main}
+  thrown
+【Previous Exception】
+CodeIgniter\Exceptions\ConfigException
+Config\App::$baseURL "https://sistema-cronos.innite.net	/" is not a valid URL.
+#0 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(145): CodeIgniter\HTTP\SiteURI->normalizeBaseURL()
+#1 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURI.php(100): CodeIgniter\HTTP\SiteURI->determineBaseURL()
+#2 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(224): CodeIgniter\HTTP\SiteURI->__construct()
+#3 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/HTTP/SiteURIFactory.php(45): CodeIgniter\HTTP\SiteURIFactory->createURIFromRoutePath()
+#4 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(805): CodeIgniter\HTTP\SiteURIFactory->createFromGlobals()
+#5 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#6 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#7 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(798): CodeIgniter\Config\BaseService::getSharedInstance()
+#8 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::uri()
+#9 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(566): CodeIgniter\Config\BaseService::__callStatic()
+#10 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#11 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(524): CodeIgniter\Config\BaseService::__callStatic()
+#12 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::request()
+#13 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic()
+#14 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(559): CodeIgniter\Config\BaseService::getSharedInstance()
+#15 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::incomingrequest()
+#16 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/Services.php(539): CodeIgniter\Config\BaseService::__callStatic()
+#17 /home/u902618915/domains/innite.net/public_html/sistema-cronos/system/Config/BaseService.php(258): CodeIgniter\Config\Services::createRequest()
+#18 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/CodeIgniter.php(656): CodeIgniter\Config\BaseService::__callStatic()
+#19 /home/u902618915/domains/innite.net/public_html/sistema-cronos/vendor/codeigniter4/framework/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->getRequestObject()
+#20 /home/u902618915/domains/innite.net/public_html/sistema-cronos/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#21 {main}
+in VENDORPATH/codeigniter4/framework/system/HTTP/SiteURI.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-06 03:32:16 --> Error: Class "App\Models\ClienteModel" not found
+in APPPATH/Controllers/PanelController.php on line 17.
+ 1 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\PanelController->clientes()
+ 2 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 03:33:57 --> Error: Class "App\Models\ClienteModel" not found
+in APPPATH/Controllers/PanelController.php on line 17.
+ 1 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\PanelController->clientes()
+ 2 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 03:33:59 --> Error: Class "App\Models\ClienteModel" not found
+in APPPATH/Controllers/PanelController.php on line 17.
+ 1 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(943): App\Controllers\PanelController->clientes()
+ 2 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController()
+ 3 VENDORPATH/codeigniter4/framework/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
