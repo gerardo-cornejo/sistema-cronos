@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/login', 'UsuarioController::login');
 $routes->get('/salir', 'UsuarioController::logout', ["filter" => "session_filter"]);
 $routes->get('/equipos', 'PanelController::equipos', ["filter" => "session_filter"]);
+$routes->get('/usuarios', 'PanelController::usuarios', ["filter" => "session_filter"]);
 $routes->get('/equipos/buscar', 'PanelController::buscar_equipo', ["filter" => "session_filter"]);
 $routes->get('/equipos/buscar/(:any)', 'EquipoController::buscado/$1', ["filter" => "session_filter"]);
 $routes->get('/clientes', 'PanelController::clientes', ["filter" => "session_filter"]);
@@ -27,6 +28,10 @@ $routes->group("api", function (RouteCollection $routes) {
     $routes->get("equipo/listar", "EquipoController::listar", ["filter" => "api_session_filter"]);
 
     $routes->post('usuario/login', 'UsuarioController::login');
+    $routes->get("usuario/listar", "UsuarioController::listar", ["filter" => "api_session_filter"]);
+    $routes->post("usuario/nuevo", "UsuarioController::nuevo", ["filter" => "api_session_filter"]);
+    $routes->post("usuario/editar", "UsuarioController::editar", ["filter" => "api_session_filter"]);
+    $routes->post("usuario/eliminar", "UsuarioController::eliminar", ["filter" => "api_session_filter"]);
 
     $routes->get("diagnostico/listar/(:any)", "DiagnosticoController::listar/$1", ["filter" => "api_session_filter"]);
     $routes->post("diagnostico/eliminar", "DiagnosticoController::eliminar", ["filter" => "api_session_filter"]);

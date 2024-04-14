@@ -77,4 +77,11 @@ class PanelController extends BaseController
 
         return view('diagnostico', ["equipo" =>   $equipo]);
     }
+
+    public function usuarios()
+    {
+        $usuarioModel = new UsuarioModel();
+
+        return view("usuarios", ["usuarios" => $usuarioModel->findAll()]);
+    }
 }

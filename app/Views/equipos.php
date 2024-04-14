@@ -10,7 +10,10 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-6">
-                    <h3>Equipos</h3>
+                    <div class="d-flex align-items-center">
+                        <i class="fa fa-laptop text-black-50" style="font-size: 15pt; margin-top: -4px; margin-right: 4px;"></i>
+                        <h3>Equipos</h3>
+                    </div>
                 </div>
                 <div class="col-6 d-flex flex-row flex-wrap align-content-center justify-content-end">
                     <button id="btnNuevoEditar" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-plus"></i> Nuevo equipo</button>

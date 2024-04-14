@@ -36,7 +36,7 @@
                         }
                         ?>
                         <div class="text-center">
-                            <img class="mb-4 w-100" src="<?= base_url("images/logo.png"); ?>" alt="">
+                            <img class="mb-4 w-100" src="<?= base_url("images/logo.jpg"); ?>" alt="">
                             <h6 class="h6 mb-3 fw-normal ">Inicia sesión para continuar</h6>
                         </div>
 

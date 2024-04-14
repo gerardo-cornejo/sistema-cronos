@@ -33,7 +33,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand text-white d-flex align-items-center" href="<?= base_url("/"); ?>">
-                <img id="imgLogo" class="me-2" src="<?= base_url('/images/icono.png') ?>" alt="" style=" height: 25px;">
+                <img id="imgLogo" class="me-2" src="<?= base_url('/images/logo.png') ?>" alt="" style=" height: 25px; filter: brightness(100);">
                 Cronos
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +96,7 @@
                             $usuario = $service->get("usuario");
                             ?>
 
-                            Hola, <?= $usuario["nombre"] ?>!
+                            <i class="fa fa-user"></i> Hola, <?= $usuario["nombre"] ?>!
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="<?= base_url("salir"); ?>"><i class="fa fa-right-from-bracket"></i> Cerrar sesión</a></li>
@@ -152,6 +152,10 @@
         }
         $.ajaxSetup({
             error: mostrarError
+        });
+        
+        $(document).resize(function() {
+            table.responsive.recalc()
         });
     </script>
     <?= $this->renderSection('script') ?>
